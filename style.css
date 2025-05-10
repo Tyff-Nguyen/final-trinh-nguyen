@@ -1,36 +1,55 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Trebuchet MS, sans-serif;
     display: inline-block;
     text-align: center;
+    background-image: linear-gradient(to right, #191834, #2b2c68, #338aca, #26b7cd, #61bdaf);
 }
 h1 {
     font-size: 1.8rem;
     color: white;
+    font-weight: bold;
 }
 .topnav {
     overflow: hidden;
-    background-color: #0A1128;
+/*     background-image: linear-gradient(to right, #191834, #2b2c68, #338aca, #26b7cd, #61bdaf); */
 }
 body {
     margin: 0;
+/*     background-image: linear-gradient(to right, #191834, #2b2c68, #338aca, #26b7cd, #61bdaf); */
 }
 .content {
     padding: 50px;
 }
 .card-grid {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 700px;
+    margin: 30px auto 30px auto;
+    justify-content: center;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .card {
-    background-color: white;
-    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    background-image: linear-gradient(to bottom right, white, #26b7cd);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    padding:20px;
+    border-radius: 10px;
+    transition: background 0.5s ease, transform 0.3s ease;
 }
+.card:hover{
+    transform: translateY(-4px);
+    background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+}
+
+.slider{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+}
+.slider:hover{
+    opacity:1;
+}
+    
 button {
-    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -38,24 +57,41 @@ button {
     border-radius: 4px;
 }
 
-.onButton{
-    background-color: #1b8a94;
+/* .onButton{
+    background-color:  #f7d1d8;
 }
+
+    
 
 .offButton{
     background-color: #5f6c6d;
-}
+} */
 
 .connectButton{
-    background-color: #24af37;
+    background: #f6a6bb;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.connectButton:hover{
+    transform: translateY(-4px);
+/*     background: linear-gradient(to bottom right, #f4bbc9,#f7d1d8); */
 }
 
 .disconnectButton{
-    background-color: #d13a30;
+    background: #7ea83d;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.disconnectButton:hover{
+    transform: translateY(-4px);
+/*     background: linear-gradient(to bottom right, #68a042, #7ea83d); */
 }
 
 .gray-label {
-    color: #bebebe;
+    color: white;
     font-size: 1rem;
 }
 
