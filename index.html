@@ -11,7 +11,7 @@
     <div class="topnav">
         <h1>ESP32 CONTROL</h1>
         <h3> made by: group Duong's children </h3>
-        <p class="gray-label">BLE state: <strong><span id="bleState" style="color:#ff6464;">Disconnected</span></strong></p>
+        <p class="gray-label">BLE state: <strong><span id="bleState" style="color:#ff3737;">Disconnected</span></strong></p>
         <div>
            <p>
                <button id="connectBleButton" class="connectButton"> Connect to BLE Device</button>
@@ -137,7 +137,7 @@
     function onDisconnected(event) {
         console.log('Device Disconnected:', event.target.device.name);
         bleStateContainer.innerHTML = "Device disconnected";
-        bleStateContainer.style.color = "#ff6464";
+        bleStateContainer.style.color = "#ff3737";
         connectToDevice(); // Optional: auto-reconnect
     }
 
@@ -235,7 +235,7 @@
                 })
                 .then(() => {
                     bleStateContainer.innerHTML = "Device Disconnected";
-                    bleStateContainer.style.color = "#ff6464";
+                    bleStateContainer.style.color = "#ff3737";
                 })
                 .catch(error => {
                     console.log("Error during disconnect:", error);
