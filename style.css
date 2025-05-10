@@ -1,5 +1,5 @@
 html {
-    font-family: Trebuchet MS, sans-serif;
+    font-family: Courier Prime, Courier New;
     display: inline-block;
     text-align: center;
     background-image: linear-gradient(to right, #191834, #2b2c68, #338aca, #26b7cd, #61bdaf);
@@ -72,7 +72,6 @@ button {
     padding: 10px;
     border-radius: 3px;
     font-weight: bold;
-    font-color: black;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 .connectButton:hover{
@@ -85,7 +84,6 @@ button {
     padding: 10px;
     border-radius: 3px;
     font-weight: bold;
-    font-color: white;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
