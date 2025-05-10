@@ -68,9 +68,10 @@ button {
 } */
 
 .connectButton{
-    background: #f6a6bb;
+    background: #d4edbb;
     padding: 10px;
     border-radius: 3px;
+    font-weight: bold;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 .connectButton:hover{
@@ -79,9 +80,10 @@ button {
 }
 
 .disconnectButton{
-    background: #7ea83d;
+    background: #ff6464;
     padding: 10px;
     border-radius: 3px;
+    font-weight: bold
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
