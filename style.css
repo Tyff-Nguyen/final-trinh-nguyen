@@ -2,7 +2,7 @@ html {
     font-family: Courier Prime, Courier New;
     display: inline-block;
     text-align: center;
-    background-image: linear-gradient(to right, #86e3ce, #d0e6a5, #ffdd4, #fa897b, #ccabd8);
+    background-image: linear-gradient(to right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
 }
 h1 {
     font-size: 1.8rem;
@@ -11,11 +11,11 @@ h1 {
 }
 .topnav {
     overflow: hidden;
-/*     background-image: linear-gradient(to right, #86e3ce, #d0e6a5, #ffdd4, #fa897b, #ccabd8); */
+/*     background-image: linear-gradient(to right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f); */
 }
 body {
     margin: 0;
-/*     background-image: linear-gradient(to right, #86e3ce, #d0e6a5, #ffdd4, #fa897b, #ccabd8); */
+/*     background-image: linear-gradient(to right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f); */
 }
 .content {
     padding: 50px;
