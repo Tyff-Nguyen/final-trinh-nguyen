@@ -29,7 +29,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .card {
-    background-image: linear-gradient(to bottom right, white, #26b7cd);
+    background-image: linear-gradient(to bottom right, #fefedf, #fcf8ff);
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     padding:20px;
     border-radius: 10px;
@@ -37,7 +37,7 @@ body {
 }
 .card:hover{
     transform: translateY(-4px);
-    background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+    background: linear-gradient(to bottom right, #fcf8ff, #fefedf);
 }
 
 .slider{
