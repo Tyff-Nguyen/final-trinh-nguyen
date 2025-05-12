@@ -50,6 +50,16 @@ float integralTerm = 0;
 float derivativeTerm = 0;
 float pwmSignal = 0;
 
+// Configure encoder interrupts
+  attachInterrupt(digitalPinToInterrupt(PIN_ENC_A), encAInterrupt, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(PIN_ENC_B), encBInterrupt, CHANGE);
+
+  // Set up BLE
+  BLEDevice::init("MotorBLE");
+  BLEServer *server = BLEDevice::createServer();
+  server->setCallbacks(new ConnectionHandler());
+  BLEService *service = server->createService(MOTOR_SVC_UUID);
+
 // === Encoder ISR Handlers ===
 void IRAM_ATTR encAInterrupt() {
   encPosition += (digitalRead(PIN_ENC_A) == digitalRead(PIN_ENC_B)) ? 1 : -1;
